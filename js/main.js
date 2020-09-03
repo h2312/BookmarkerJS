@@ -24,6 +24,8 @@ function saveBookmark(e) {
         bookmarks.push(bookmark);
         localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     }
+    // Clear form
+    document.getElementById('myForm').reset();
     fetchBookmarks()
     e.preventDefault();
 }
